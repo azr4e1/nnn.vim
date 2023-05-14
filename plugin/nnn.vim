@@ -35,7 +35,7 @@ function! s:NNNChooser_float()
     let win = nvim_open_win(buf, 1, opts)
     hi BrowserBorder guifg=grey40
     " set aesthetics
-    call setwinvar(win, '&winhighlight', 'NormalFloat:Normal,FloatBorder:BrowserBorder')
+    call setwinvar(win, '&winhighlight', 'NormalFloat:Normal')
     call setwinvar(win, '&colorcolumn', '')
     setlocal nobuflisted
     let b:nnn = bufnr()
